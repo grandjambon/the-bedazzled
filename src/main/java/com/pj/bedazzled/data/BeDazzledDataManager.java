@@ -365,7 +365,10 @@ public class BeDazzledDataManager {
     public void getCosts(int season) {
         Collection<Match> matches = getMatches(match -> match.getSeasonNumber() == season);
 
-        double costPerGame = 475/10;
+        BigDecimal costPerSeason = new BigDecimal("475");
+        BigDecimal numGamesPerSeason = new BigDecimal("10");
+
+        BigDecimal costPerGame = costPerSeason.divide(numGamesPerSeason, 2, BigDecimal.ROUND_FLOOR);
 
         Map<String, Debt> playerToDebt = new HashMap<>(8);
 
@@ -375,7 +378,8 @@ public class BeDazzledDataManager {
                 players.add(m.getGoalie());
             }
 
-            double costPerPlayer = costPerGame/players.size();
+            BigDecimal numPlayersInTeam = new BigDecimal(players.size());
+            BigDecimal costPerPlayer = costPerGame.divide(numPlayersInTeam, 2, BigDecimal.ROUND_FLOOR);
 
             System.out.format("Match %-2s is cost %2.2f\n", m.getNumber(), costPerPlayer);
             
@@ -393,14 +397,14 @@ public class BeDazzledDataManager {
     }
 
     private static class Debt {
-        private double d = 0.0;
+        private BigDecimal d = new BigDecimal("0");
 
-        public void add(double amount) {
-            d+=amount;
+        public void add(BigDecimal amount) {
+            d = d.add(amount);
         }
 
         public double getTotal() {
-            return d;
+            return d.doubleValue();
         }
     }
 
