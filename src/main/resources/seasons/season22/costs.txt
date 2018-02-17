@@ -1,0 +1,77 @@
+Rob	6.5
+Baz	6.5
+Ross	6.5
+Max	6.5
+Chris	6.5
+Paddy	6.5
+Ben	6.5
+	
+Rob	6.5
+Ross	6.5
+Paddy	6.5
+Donal	6.5
+Phil	6.5
+Baz	6.5
+Anel	6.5
+	
+Rob	6.5
+Ross	6.5
+Baz	6.5
+Chris	6.5
+Donal	6.5
+Paddy	6.5
+Phil	6.5
+	
+Rob	7.6
+Ross	7.6
+Baz	7.6
+Chris	7.6
+Phil	7.6
+Paddy	7.6
+	
+Rob	6.5
+Ross	6.5
+Baz	6.5
+Chris	6.5
+Paddy	6.5
+Donal	6.5
+Ben	6.5
+	
+Phil	7.6
+Ben	7.6
+Baz	7.6
+Paddy	7.6
+Ross	7.6
+Chris	7.6
+	
+Rob	6.5
+Ross	6.5
+Baz	6.5
+Paddy	6.5
+Ben	6.5
+Luke	6.5
+Chris	6.5
+	
+Rob	7.6
+Chris	7.6
+Donal	7.6
+Ben	7.6
+Baz	7.6
+Paddy	7.6
+	
+Rob	6.5
+Ben	6.5
+Max	6.5
+Baz	6.5
+Chris	6.5
+Donal	6.5
+Paddy	6.5
+	
+Rob	6.5
+Ben	6.5
+Max	6.5
+Baz	6.5
+Chris	6.5
+Donal	6.5
+Paddy	6.5
+

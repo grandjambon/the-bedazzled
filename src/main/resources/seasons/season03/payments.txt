@@ -1,0 +1,8 @@
+Rob 60
+Phil 75
+Marcel 30
+Nathan 37.5
+Rob 15
+Dominik 40
+Donal 22.5
+Colin 15

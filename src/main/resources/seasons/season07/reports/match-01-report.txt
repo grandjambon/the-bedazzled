@@ -1,0 +1,15 @@
+OPPONENT:Unathletic Palermo
+
+GOALKEEPER:Rob
+OUTFIELD:Nathan
+OUTFIELD:Dominik
+OUTFIELD:Chris
+OUTFIELD:Dean
+OUTFIELD:Paddy
+OUTFIELD:Max
+
+GOAL:Max
+GOAL:Dominik
+HALF
+GOAL:Paddy
+GOAL:Max

@@ -1,0 +1,19 @@
+OPPONENT:Unathletic Palermo
+
+GOALKEEPER:Rob
+OUTFIELD:Nathan
+OUTFIELD:Dominik
+OUTFIELD:Dean
+OUTFIELD:Paddy
+OUTFIELD:Rich
+
+GOAL:Nathan
+GOAL:Dean
+HALF
+GOAL:Paddy
+GOAL:Rich
+GOAL:Paddy
+GOAL:Rich
+GOAL:Paddy
+GOAL:Rich
+GOAL:Rich

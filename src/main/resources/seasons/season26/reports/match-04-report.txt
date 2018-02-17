@@ -1,0 +1,23 @@
+OPPONENT:Shillelagh Celtic
+
+GOALKEEPER:Rob
+OUTFIELD:Phil
+OUTFIELD:Goldie
+OUTFIELD:Donal
+OUTFIELD:Baz
+OUTFIELD:Ben
+OUTFIELD:Paddy
+
+GOAL:Donal
+GOAL:Donal
+GOAL:Baz
+GOAL:Phil
+GOAL:Donal
+GOAL:Ben
+GOAL:Paddy
+CONCEDED
+HALF
+GOAL:Paddy
+GOAL:Paddy
+GOAL:Goldie
+GOAL:Goldie

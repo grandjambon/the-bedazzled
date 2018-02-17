@@ -1,0 +1,20 @@
+OPPONENT:Shillelagh Celtic
+
+GOALKEEPER:Rob
+OUTFIELD:Max
+OUTFIELD:Chris
+OUTFIELD:Phil
+OUTFIELD:Paddy
+OUTFIELD:Nathan
+
+GOAL:Paddy
+GOAL:Paddy
+GOAL:Paddy
+GOAL:OG
+GOAL:Paddy
+GOAL:Paddy
+GOAL:Max
+CONCEDED
+HALF
+GOAL:Paddy
+

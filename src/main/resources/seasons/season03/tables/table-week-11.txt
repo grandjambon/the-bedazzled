@@ -1,0 +1,52 @@
+Bobby's Dazzlers
+	11	9
+	0
+	2
+	27	76
+	28	+48
+Tropa de Elite
+	11	8
+	1
+	2
+	25	61
+	40
+	+21
+The BeDazzled	11	5
+	2
+	4
+	17	46	40
+	+6
+Fullback FC
+	11	4
+	4
+	3
+	16	56
+	56
+	+0
+Dumb & Dumbarton
+	11	4
+	3
+	4
+	15	52	48
+	+4
+Special Knees
+	11	4
+	0
+	7
+	12	51
+	54
+	-3
+2 Up 2 Down
+	11	3
+	1
+	7
+	10
+	41
+	73
+	-32
+AC Earth Wind Fire
+	11	1	1
+	9
+	4
+	34	78
+	-44

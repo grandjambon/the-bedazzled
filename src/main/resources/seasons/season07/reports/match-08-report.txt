@@ -1,0 +1,15 @@
+OPPONENT:Unathletic Palermo
+
+GOALKEEPER:Rob
+OUTFIELD:Nathan
+OUTFIELD:Phil
+OUTFIELD:Dominik
+OUTFIELD:Dean
+OUTFIELD:Magnus
+
+GOAL:Dominik
+GOAL:Nathan
+HALF
+CONCEDED
+CONCEDED
+GOAL:Nathan

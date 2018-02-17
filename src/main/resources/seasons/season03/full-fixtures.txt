@@ -1,0 +1,86 @@
+B GRADE
+
+Week 1, 02/09/2010
+Court 1   7.00   Bobby’s Dazzlers v Special Knees    
+Court 1   7.45   Dumb & Dumbarton v AC Earth Wind Fire
+Court 1   8.30   Tropa de Elite v 2 Up 2 Down
+Court 1   9.15   Shaktar Senseless v The BeDazzled
+
+Week 2, 09/09/10
+Court 1   7.00   Bobby’s Dazzlers v The BeDazzled
+Court 1   7.45   AC Earth Wind Fire v 2 Up 2 Down
+Court 1   8.30   Tropa de Elite v Shaktar Senseless
+Court 1   9.15   Dumb & Dumbarton v Special Knees
+
+Week 3, 16/09/10
+Court 1   7.00   AC Earth Wind Fire v Shaktar Senseless
+Court 1   7.45   Special Knees v The BeDazzled
+Court 1   8.30   Dumb & Dumbarton v 2 Up 2 Down
+Court 1   9.15   Bobby’s Dazzlers v Tropa de Elite
+
+Week 4, 23/09/10
+Court 1   7.00   Special Knees v Tropa de Elite
+Court 1   7.45   Dumb & Dumbarton v The BeDazzled
+Court 1   8.30   AC Earth Wind Fire v Bobby’s Dazzlers
+Court 1   9.15   2 Up 2 Down v Shaktar Senseless
+
+Week 5, 30/09/10
+Court 1   7.00   The BeDazzled v Tropa de Elite
+Court 1   7.45   Dumb & Dumbarton v Shaktar Senseless
+Court 1   8.30   2 Up 2 Down v Bobby’s Dazzlers
+Court 1   9.15   Special Knees v AC Earth Wind Fire
+
+Week 6, 07/10/10
+Court 1   7.00   The BeDazzled v AC Earth Wind Fire
+Court 1   7.45   Shaktar Senseless v Bobby’s Dazzlers
+Court 1   8.30   2 Up 2 Down v Special Knees
+Court 1   9.15   Dumb & Dumbarton v Tropa de Elite
+
+Week 7, 14/10/10
+Court 1   7.00   The BeDazzled v 2 Up 2 Down
+Court 1   7.45   Tropa de Elite v AC Earth Wind Fire
+Court 1   8.30   Shaktar Senseless v Special Knees
+Court 1   9.15   Dumb & Dumbarton v Bobby’s Dazzlers
+
+Week 8, 21/10/10
+Court 1   7.00   Tropa de Elite v 2 Up 2 Down
+Court 1   7.45   Bobby’s Dazzlers v Special Knees
+Court 1   8.30   Dumb & Dumbarton v AC Earth Wind Fire
+Court 1   9.15   Shaktar Senseless v The BeDazzled
+
+Week 9, 28/10/10
+Court 1   7.00   Special Knees v Dumb & Dumbarton
+Court 1   7.45   Bobby’s Dazzlers v The BeDazzled
+Court 1   8.30   Tropa de Elite v Shaktar Senseless
+Court 1   9.15   AC Earth Wind Fire v 2 Up 2 Down  
+
+Week 10, 04/11/10
+Court 1   7.00   Bobby’s Dazzlers v Tropa de Elite
+Court 1   7.45   Dumb & Dumbarton v 2 Up 2 Down
+Court 1   8.30   Special Knees v The BeDazzled
+Court 1   9.15   Shaktar Senseless v AC Earth Wind Fire
+
+Week 11, 11/11/10
+Court 1   7.00   2 Up 2 Down v Shaktar Senseless
+Court 1   7.45   Special Knees v Tropa de Elite
+Court 1   8.30   Dumb & Dumbarton v The BeDazzled
+Court 1   9.15   Bobby’s Dazzlers v AC Earth Wind Fire
+
+Week 12, 18/11/10
+Court 1   7.00   AC Earth Wind Fire v Special Knees
+Court 1   7.45   Shaktar Senseless v Dumb & Dumbarton
+Court 1   8.30   Bobby’s Dazzlers v 2 Up 2 Down
+Court 1   9.15   Tropa de Elite v The BeDazzled
+
+Week 13, 25/11/10
+Court 1   7.00   Shaktar Senseless v Bobby’s Dazzlers
+Court 1   7.45   2 Up 2 Down v Special Knees
+Court 1   8.30   AC Earth Wind Fire v The BeDazzled
+Court 1   9.15   Tropa de Elite v Dumb & Dumbarton
+
+Week 14, 02/12/10
+Court 1   7.00   Bobby’s Dazzlers v Dumb & Dumbarton
+Court 1   7.45   AC Earth Wind Fire v Tropa de Elite
+Court 1   8.30   Special Knees v Shaktar Senseless
+Court 1   9.15   2 Up 2 Down v The BeDazzled
+

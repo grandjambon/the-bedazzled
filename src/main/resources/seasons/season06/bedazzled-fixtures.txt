@@ -1,0 +1,14 @@
+| Week 01 |  08/09/11  |  8.30  |  The BeDazzled  3-5  Dumb & Dumbarton    |
+| Week 02 |  15/09/11  |  7.45  |  The BeDazzled  2-0  AC Earth Wind Fire  |
+| Week 03 |  22/09/11  |  8.30  |  The BeDazzled  2-13 Fullback FC         |
+| Week 04 |  29/09/11  |  9.15  |  The BeDazzled  1-5  Special Knees       |
+| Week 05 |  06/10/11  |  8.30  |  The BeDazzled  3-5  Shillelagh Celtic   |
+| Week 06 |  13/10/11  |  8.30  |  The BeDazzled  3-6  Bobby’s Dazzlers    |
+| Week 07 |  20/10/11  |  7.45  |  The BeDazzled  2-7  Nice Tackle         |
+| Week 08 |  03/11/11  |  7.00  |  The BeDazzled  4-8  Dumb & Dumbarton    |
+| Week 09 |  10/11/11  |  9.15  |  The BeDazzled  8-3  AC Earth Wind Fire  |
+| Week 10 |  17/11/11  |  7.45  |  The BeDazzled  5-11 Fullback FC         |
+| Week 11 |  24/11/11  |  8.30  |  The BeDazzled  4-3  Special Knees       |
+| Week 12 |  01/12/11  |  8.30  |  The BeDazzled  0-7  Shillelagh Celtic   |
+| Week 13 |  08/12/11  |  7.45  |  The BeDazzled  4-4  Bobby’s Dazzlers    |
+| Week 14 |  15/12/11  |  9.15  |  The BeDazzled  5-6  Nice Tackle         |

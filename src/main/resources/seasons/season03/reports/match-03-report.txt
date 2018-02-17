@@ -1,0 +1,16 @@
+OPPONENT:Special Knees
+
+GOALKEEPER:Rob
+OUTFIELD:Nathan
+OUTFIELD:Dominik
+OUTFIELD:Marcel
+OUTFIELD:Magnus
+OUTFIELD:Rich
+
+GOAL:Dominik
+GOAL:Nathan
+HALF
+GOAL:Nathan
+GOAL:Marcel
+CONCEDED
+CONCEDED

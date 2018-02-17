@@ -1,0 +1,58 @@
+Nice Tackle
+	1 	1 	0
+	0
+	3 	6
+	0
+	+6
+Shillelagh Celtic
+	1
+	1
+	0
+	0
+	3
+	7
+	3
+	+4
+Tropa de Elite
+	1 	1
+	0
+	0
+	3
+	5 	1
+	+4
+Fullback FC 	1 	1
+	0
+	0
+	3
+	5
+	3
+	+2
+2 Up 2 Down 	1 	0
+	0
+	0
+	0
+	3
+	5
+	-2
+AC Earth Wind Fire
+	1 	0
+	0
+	0
+	0
+	3
+	7
+	-4
+The BeDazzled 	1 	0
+	0
+	0
+	0
+	1
+	5
+	-4
+Dumb & Dumbarton 	1 	0
+	0
+	0
+	0
+	0
+	6
+	-6

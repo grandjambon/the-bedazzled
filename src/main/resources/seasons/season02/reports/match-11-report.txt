@@ -1,0 +1,17 @@
+OPPONENT:Shaktar Senseless
+
+GOALKEEPER:Damian
+OUTFIELD:Phil
+OUTFIELD:Magnus
+OUTFIELD:Nathan
+OUTFIELD:Dominik
+OUTFIELD:Louis
+
+CONCEDED
+CONCEDED
+GOAL:Nathan
+HALF
+GOAL:Louis
+GOAL:Magnus
+GOAL:Nathan
+CONCEDED

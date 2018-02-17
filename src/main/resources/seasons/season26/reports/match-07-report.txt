@@ -1,0 +1,19 @@
+OPPONENT:Shillelagh Celtic
+
+GOALKEEPER:Rob
+OUTFIELD:Goldie
+OUTFIELD:Max
+OUTFIELD:Donal
+OUTFIELD:Paddy
+OUTFIELD:Baz
+OUTFIELD:Ben
+
+GOAL:Paddy
+GOAL:Max
+GOAL:Donal
+GOAL:Max
+GOAL:Paddy
+GOAL:Donal
+HALF
+GOAL:Paddy
+GOAL:Max

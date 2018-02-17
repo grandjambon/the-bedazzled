@@ -1,0 +1,22 @@
+OPPONENT:Special Knees
+
+GOALKEEPER:Rob
+OUTFIELD:Ross
+OUTFIELD:Max
+OUTFIELD:Paddy
+OUTFIELD:Chris
+OUTFIELD:Donal
+OUTFIELD:Luke
+
+GOAL:Luke
+GOAL:Paddy
+GOAL:Max
+HALF
+GOAL:Donal
+GOAL:Paddy
+GOAL:Paddy
+GOAL:Donal
+GOAL:Luke
+CONCEDED
+GOAL:Luke
+GOAL:Paddy

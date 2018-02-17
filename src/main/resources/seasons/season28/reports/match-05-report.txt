@@ -1,0 +1,20 @@
+OPPONENT:Nice Tackle
+
+GOALKEEPER:GeorgeBaz
+OUTFIELD:Goldie
+OUTFIELD:Phil
+OUTFIELD:Baz
+OUTFIELD:Donal
+OUTFIELD:Chris
+
+GOAL:Goldie
+GOAL:Donal
+GOAL:Goldie
+GOAL:Donal
+HALF
+GOAL:Phil
+GOAL:Goldie
+CONCEDED
+GOAL:Chris
+GOAL:Goldie
+CONCEDED

@@ -1,0 +1,66 @@
+Bobby's Dazzlers
+	5
+	4
+	0
+	1
+	12
+	38
+	11
+	+27
+Tropa de Elite
+	5
+	3
+	1
+	1
+	10
+	22
+	21
+	+1
+Special Knees
+	5
+	3
+	0
+	2
+	9
+	29
+	20
+	+9
+Dumb & Dumbarton
+	5
+	2
+	2
+	1
+	8
+	25
+	19	+6
+The BeDazzled
+	5
+	2
+	1
+	2
+	7
+	17
+	15	+2
+New Team
+	5
+	0
+	4
+	1
+	4
+	18	24	-6
+2 Up 2 Down
+	5
+	1
+	1
+	3
+	4
+	20
+	37
+	-17
+AC Earth Wind Fire
+	5
+	0
+	1
+	4	1
+	15	37
+	-22

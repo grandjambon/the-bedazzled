@@ -1,0 +1,17 @@
+OPPONENT:Blighty Coffee
+
+GOALKEEPER:Rob
+OUTFIELD:Paddy
+OUTFIELD:Baz
+OUTFIELD:Goldie
+OUTFIELD:Chris
+OUTFIELD:Ben
+OUTFIELD:Luke
+
+GOAL:Chris
+GOAL:Ben
+GOAL:Ben
+HALF
+GOAL:Goldie
+GOAL:Paddy
+GOAL:Luke

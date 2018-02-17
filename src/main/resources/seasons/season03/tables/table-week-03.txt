@@ -1,0 +1,65 @@
+Tropa de Elite
+	3
+	2
+	1
+	0
+	7
+	14
+	11
+	+3
+The BeDazzled	3
+	2
+	0
+	1
+	6
+	12	5
+	+7
+Dumb & Dumbarton	3
+	2
+	0
+	1
+	6
+	16
+	10
+	+6
+Bobby's Dazzlers
+	3
+	2
+	0
+	1
+	6
+	12	7
+	+5
+Special Knees
+	3
+	1
+	0
+	2
+	3
+	9
+	14
+	-5
+2 Up 2 Down
+	3
+	1
+	0
+	2
+	3
+	13
+	19	-6
+Shaktar Senseless
+	3
+	0
+	2
+	1
+	2
+	8
+	14	-6
+AC Earth Wind Fire
+	3
+	0
+	1
+	2
+	1
+	9
+	13	-4

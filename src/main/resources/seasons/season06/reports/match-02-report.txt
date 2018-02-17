@@ -1,0 +1,13 @@
+OPPONENT:AC Earth Wind Fire
+
+GOALKEEPER:Rob
+OUTFIELD:Louis
+OUTFIELD:Phil
+OUTFIELD:Paddy
+OUTFIELD:Donal
+OUTFIELD:Dominik
+OUTFIELD:Steffen
+
+GOAL:Donal
+HALF
+GOAL:Donal

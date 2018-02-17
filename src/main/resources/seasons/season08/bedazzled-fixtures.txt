@@ -1,0 +1,14 @@
+| Week 01 | 26/04/12 |       | The BeDazzled  9 v 0  Unathletic Palermo |
+| Week 02 | 03/05/12 |       | The BeDazzled  1 v 0  Dumb & Dumbarton   |
+| Week 03 | 10/05/12 |       | The BeDazzled  1 v 3  Shillelagh Celtic  |
+| Week 04 | 17/05/12 |       | The BeDazzled  2 v 3  Nomads             |
+| Week 05 | 24/05/12 |       | The BeDazzled  2 v 5  Bayern Bru         |
+| Week 06 | 31/05/12 |       | The BeDazzled  5 v 3  AC Earth Wind Fire |
+| Week 07 | 07/06/12 |       | The BeDazzled  4 v 1  Fullback FC        |
+| Week 08 | 14/06/12 |       | The BeDazzled  6 v 0  Unathletic Palermo |
+| Week 09 | 21/06/12 |       | The BeDazzled  2 v 2  Dumb & Dumbarton   |
+| Week 10 | 28/06/12 |       | The BeDazzled  6 v 5  Shillelagh Celtic  |
+| Week 11 | 05/07/12 |       | The BeDazzled  2 v 8  Nomads             |
+| Week 12 | 12/07/12 |       | The BeDazzled  5 v 6  Bayern Bru         |
+| Week 13 | 19/07/12 |       | The BeDazzled  6 v 2  AC Earth Wind Fire |
+| Week 14 | 26/07/12 | 21:15 | The BeDazzled    v    Fullback FC        |

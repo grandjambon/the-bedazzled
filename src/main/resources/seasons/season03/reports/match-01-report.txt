@@ -1,0 +1,17 @@
+OPPONENT:Shaktar Senseless
+
+GOALKEEPER:GBell
+OUTFIELD:Phil
+OUTFIELD:Nathan
+OUTFIELD:Magnus
+OUTFIELD:Dominik
+OUTFIELD:Rich
+OUTFIELD:Marcel
+
+GOAL:Marcel
+HALF
+GOAL:Magnus
+GOAL:Phil
+GOAL:Rich
+GOAL:Rich
+GOAL:Rich

@@ -1,0 +1,58 @@
+Special Knees
+	4
+	3
+	1
+	0	10	23
+	14
+	+9
+Shillelagh Celtic
+	4
+	3
+	0	1
+	9
+	31
+	13
+	+18
+The BeDazzled
+	4
+	3
+	0	1
+	9
+	19
+	13	+6
+Ac Earth Wind Fire
+	4
+	2
+	0
+	2
+	6
+	14	18	-4
+Fullback FC
+	4
+	2
+	0	2
+	6
+	11
+	20
+	-9
+The Munkeees
+	4
+	1
+	1
+	2
+	4
+	14
+	13	+1
+Dumb & Dumbarton
+	4
+	1
+	0	3
+	3
+	19
+	20
+	-1
+2 Up 2 Down
+	4
+	0	0	4
+	0	19	39
+	-20

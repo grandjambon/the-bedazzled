@@ -1,0 +1,18 @@
+OPPONENT:Shaktar Senseless
+
+GOALKEEPER:Rob
+OUTFIELD:Phil
+OUTFIELD:Nathan
+OUTFIELD:Rich
+OUTFIELD:Dominik
+OUTFIELD:Louis
+OUTFIELD:Magnus
+
+GOAL:Nathan
+GOAL:Nathan
+HALF
+GOAL:Rich
+GOAL:Rich
+GOAL:Rich
+CONCEDED
+GOAL:Rich

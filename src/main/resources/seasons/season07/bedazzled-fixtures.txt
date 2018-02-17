@@ -1,0 +1,14 @@
+| Week 01 | 12/01/12 |       | The BeDazzled  4 v 0  Unathletic Palermo |
+| Week 02 | 19/01/12 |       | The BeDazzled  4 v 4  Dumb & Dumbarton   |
+| Week 03 | 26/01/12 |       | The BeDazzled  5 v 10 Fullback FC        |
+| Week 04 | 02/02/12 |       | The BeDazzled  5 v 5  Special Knees      |
+| Week 05 | 16/02/12 |       | The BeDazzled  3 v 7  The Boot Tang Clan |
+| Week 06 | 23/02/12 |       | The BeDazzled  0 v 2  AC Earth Wind Fire |
+| Week 07 | 01/03/12 |       | The BeDazzled  1 v 2  Shillelagh Celtic  |
+| Week 08 | 08/03/12 |       | The BeDazzled  3 v 2  Unathletic Palermo |
+| Week 09 | 15/03/12 |       | The BeDazzled  2 v 5  Dumb & Dumbarton   |
+| Week 10 | 22/03/12 |       | The BeDazzled  4 v 2  Fullback FC        |
+| Week 11 | 29/03/12 |       | The BeDazzled  1 v 4  Special Knees      |
+| Week 12 | 05/04/12 |       | The BeDazzled  5 v 2  The Boot Tang Clan |
+| Week 13 | 12/04/12 |       | The BeDazzled  3 v 1  AC Earth Wind Fire |
+| Week 14 | 19/04/12 |       | The BeDazzled  4 v 8  Shillelagh Celtic  |

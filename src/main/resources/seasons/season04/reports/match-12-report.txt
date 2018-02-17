@@ -1,0 +1,24 @@
+OPPONENT:AC Earth Wind Fire
+
+GOALKEEPER:Damian
+OUTFIELD:Nathan
+OUTFIELD:Rich
+OUTFIELD:Marcel
+OUTFIELD:Dominik
+OUTFIELD:Donal
+
+GOAL:Donal
+GOAL:Rich
+GOAL:Rich
+GOAL:Rich
+GOAL:Marcel
+GOAL:Marcel
+GOAL:Rich
+HALF
+CONCEDED
+GOAL:Marcel
+GOAL:Marcel
+GOAL:Nathan
+CONCEDED
+GOAL:Rich
+GOAL:Nathan

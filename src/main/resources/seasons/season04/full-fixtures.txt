@@ -1,0 +1,84 @@
+Week 1, 06/01/11
+Court 2   7.00   The Munkeees v Fullback FC  
+Court 2   7.45   Shillelagh Celtic v Special Knees
+Court 2   8.30   The BeDazzled v 2 Up 2 Down
+Court 2   9.15   Dumb & Dumbarton v AC Earth Wind Fire
+
+Week 2, 13/01/11
+Court 2   7.00   The Munkeees v AC Earth Wind Fire
+Court 2   7.45   Special Knees v 2 Up 2 Down
+Court 2   8.30   The BeDazzled v Dumb & Dumbarton
+Court 2   9.15   Shillelagh Celtic v Fullback FC
+
+Week 3, 20/01/11
+Court 2   7.00   Special Knees v Dumb & Dumbarton
+Court 2   7.45   Fullback FC v AC Earth Wind Fire
+Court 2   8.30   Shillelagh Celtic v 2 Up 2 Down
+Court 2   9.15   The Munkeees v The BeDazzled
+
+Week 4, 27/01/11
+Court 2   7.00   Fullback FC v The BeDazzled
+Court 2   7.45   Shillelagh Celtic v AC Earth Wind Fire
+Court 2   8.30   Special Knees v The Munkeees
+Court 2   9.15   2 Up 2 Down v Dumb & Dumbarton
+
+Week 5, 03/02/11
+Court 2   7.00   AC Earth Wind Fire v The BeDazzled
+Court 2   7.45   Shillelagh Celtic v Dumb & Dumbarton
+Court 2   8.30   2 Up 2 Down v The Munkeees
+Court 2   9.15   Fullback FC v Special Knees
+
+Week 6, 10/02/11
+Court 2   7.00   AC Earth Wind Fire v Special Knees
+Court 2   7.45   Dumb & Dumbarton v The Munkeees
+Court 2   8.30   2 Up 2 Down v Fullback FC
+Court 2   9.15   Shillelagh Celtic v The BeDazzled
+
+Week 7, 17/02/11
+Court 2   7.00   AC Earth Wind Fire v 2 Up 2 Down
+Court 2   7.45   The BeDazzled v Special Knees
+Court 2   8.30   Dumb & Dumbarton v Fullback FC
+Court 2   9.15   Shillelagh Celtic v The Munkeees
+
+Week 8, 24/02/11
+Court 2   7.00   The BeDazzled v 2 Up 2 Down
+Court 2   7.45   The Munkeees v Fullback FC
+Court 2   8.30   Shillelagh Celtic v Special Knees
+Court 2   9.15   Dumb & Dumbarton v AC Earth Wind Fire
+
+Week 9, 03/03/11
+Court 2   7.00   Fullback FC v Shillelagh Celtic
+Court 2   7.45   The Munkeees v AC Earth Wind Fire
+Court 2   8.30   The BeDazzled v Dumb & Dumbarton
+Court 2   9.15   Special Knees v 2 Up 2 Down
+
+Week 10, 10/03/11
+Court 2   7.00   The Munkeees v The BeDazzled
+Court 2   7.45   Shillelagh Celtic v 2 Up 2 Down
+Court 2   8.30   Fullback FC v AC Earth Wind Fire
+Court 2   9.15   Dumb & Dumbarton v Special Knees
+
+Week 11, 17/03/11
+Court 2   7.00   2 Up 2 Down v Dumb & Dumbarton
+Court 2   7.45   Fullback FC v The BeDazzled
+Court 2   8.30   Shillelagh Celtic v AC Earth Wind Fire
+Court 2   9.15   The Munkeees v Special Knees
+
+Week 12, 24/03/11
+Court 2   7.00   Special Knees v Fullback FC
+Court 2   7.45   Dumb & Dumbarton v Shillelagh Celtic
+Court 2   8.30   The Munkeees v 2 Up 2 Down
+Court 2   9.15   The BeDazzled v AC Earth Wind Fire
+
+Week 13, 31/03/11
+Court 2   7.00   Dumb & Dumbarton v The Munkeees
+Court 2   7.45   2 Up 2 Down v Fullback FC
+Court 2   8.30   Special Knees v AC Earth Wind Fire
+Court 2   9.15   The BeDazzled v Shillelagh Celtic
+
+Week 14, 07/04/11
+Court 2   7.00   The Munkeees v Shillelagh Celtic
+Court 2   7.45   Special Knees v The BeDazzled
+Court 2   8.30   Fullback FC v Dumb & Dumbarton
+Court 2   9.15   2 Up 2 Down v AC Earth Wind Fire
+

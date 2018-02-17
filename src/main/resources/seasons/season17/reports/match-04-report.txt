@@ -1,0 +1,21 @@
+OPPONENT:Blighty Coffee
+
+GOALKEEPER:Rob
+OUTFIELD:Max
+OUTFIELD:Ross
+OUTFIELD:Luke
+OUTFIELD:Paddy
+OUTFIELD:Donal
+
+GOAL:Paddy
+GOAL:Paddy
+GOAL:Ross
+CONCEDED
+GOAL:Paddy
+GOAL:Luke
+GOAL:Donal
+HALF
+GOAL:Luke
+GOAL:Paddy
+GOAL:Donal
+GOAL:Max

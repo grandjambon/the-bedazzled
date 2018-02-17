@@ -1,0 +1,20 @@
+OPPONENT:AC Earth Wind Fire
+
+GOALKEEPER:Rob
+OUTFIELD:Phil
+OUTFIELD:GBell
+OUTFIELD:Magnus
+OUTFIELD:Nathan
+OUTFIELD:Donal
+
+GOAL:Magnus
+GOAL:Nathan
+GOAL:Nathan
+HALF
+CONCEDED
+GOAL:Magnus
+GOAL:Phil
+GOAL:Donal
+GOAL:Donal
+GOAL:Nathan
+GOAL:Donal

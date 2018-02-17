@@ -1,0 +1,16 @@
+OPPONENT:Dumb & Dumbarton
+
+GOALKEEPER:Rob
+OUTFIELD:Rich
+OUTFIELD:Phil
+OUTFIELD:Nathan
+OUTFIELD:Dominik
+OUTFIELD:Donal
+
+GOAL:Nathan
+GOAL:Rich
+CONCEDED
+GOAL:Nathan
+HALF
+GOAL:Rich
+GOAL:Phil
