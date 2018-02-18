@@ -1,5 +1,6 @@
 package com.pj.bedazzled.data;
 
+import com.pj.bedazzled.data.model.Costs;
 import com.pj.bedazzled.data.model.Player;
 import com.pj.bedazzled.springboot.controller.BeDazzledConfiguration;
 import org.junit.Test;
@@ -10,6 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.IOException;
 import java.util.Collection;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
@@ -30,7 +32,11 @@ public class BeDazzledDataManagerTest {
 
     @Test
     public void testGetCosts() throws IOException {
-        dataManager.getCosts(31);
+        Map<String, Costs.Debt> costs = dataManager.getCosts(29);
+        costs.forEach((player, debt) -> System.out.format("%s = %s\n", player, debt.getTotal()));
+
+        // verify that they add up to a diff of less than a pound out
+        assertEquals(475, costs.values().stream().mapToDouble(Costs.Debt::getTotal).sum(), 1);
     }
 
 }

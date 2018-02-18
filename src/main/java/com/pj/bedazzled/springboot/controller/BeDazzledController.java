@@ -116,6 +116,8 @@ public class BeDazzledController {
         goalies.removeIf(player -> player.getGoalieApps() == 0);
         model.addAttribute("gks", goalies);
 
+        model.addAttribute("costs", dataManager.getCosts(seasonNum));
+
         return "season";
     }
 

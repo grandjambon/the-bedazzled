@@ -362,50 +362,24 @@ public class BeDazzledDataManager {
         return null;
     }
 
-    public void getCosts(int season) {
+    public Map<String, Costs.Debt> getCosts(int season) {
         Collection<Match> matches = getMatches(match -> match.getSeasonNumber() == season);
 
-        BigDecimal costPerSeason = new BigDecimal("475");
-        BigDecimal numGamesPerSeason = new BigDecimal("10");
+        Costs costs = new Costs(475, matches.size());
 
-        BigDecimal costPerGame = costPerSeason.divide(numGamesPerSeason, 2, BigDecimal.ROUND_FLOOR);
-
-        Map<String, Debt> playerToDebt = new HashMap<>(8);
-
+        int i = 1;
         for (Match m : matches) {
+            int matchNum = i;
             List<String> players = new ArrayList<>(m.getPlayers());
             if (m.getGoalie() != null) {
                 players.add(m.getGoalie());
             }
 
-            BigDecimal numPlayersInTeam = new BigDecimal(players.size());
-            BigDecimal costPerPlayer = costPerGame.divide(numPlayersInTeam, 2, BigDecimal.ROUND_FLOOR);
-
-            System.out.format("Match %-2s is cost %2.2f\n", m.getNumber(), costPerPlayer);
-            
-            for (String player : players) {
-                Debt d = playerToDebt.get(player);
-                if (d == null) {
-                    d = new Debt();
-                    playerToDebt.put(player, d);
-                }
-                d.add(costPerPlayer);
-            }
+            costs.setNumPlayers(matchNum, players.size());
+            players.stream().forEach(player -> costs.addDebt(player, matchNum));
+            i++;
         }
-
-        playerToDebt.forEach((name, debt) -> System.out.format("| %-15s | %2.2f |\n", name, debt.getTotal()));
-    }
-
-    private static class Debt {
-        private BigDecimal d = new BigDecimal("0");
-
-        public void add(BigDecimal amount) {
-            d = d.add(amount);
-        }
-
-        public double getTotal() {
-            return d.doubleValue();
-        }
+        return costs.getPlayerToDebt();
     }
 
     private static class MatchComparator implements Comparator<Match> {
