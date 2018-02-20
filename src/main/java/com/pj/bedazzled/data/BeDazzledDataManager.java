@@ -362,46 +362,24 @@ public class BeDazzledDataManager {
         return null;
     }
 
-    public void getCosts(int season) {
+    public Map<String, Costs.Debt> getCosts(int season) {
         Collection<Match> matches = getMatches(match -> match.getSeasonNumber() == season);
 
-        double costPerGame = 475/10;
+        Costs costs = new Costs(475, 10);
 
-        Map<String, Debt> playerToDebt = new HashMap<>(8);
-
+        int i = 1;
         for (Match m : matches) {
+            int matchNum = i;
             List<String> players = new ArrayList<>(m.getPlayers());
             if (m.getGoalie() != null) {
                 players.add(m.getGoalie());
             }
 
-            double costPerPlayer = costPerGame/players.size();
-
-            System.out.format("Match %-2s is cost %2.2f\n", m.getNumber(), costPerPlayer);
-            
-            for (String player : players) {
-                Debt d = playerToDebt.get(player);
-                if (d == null) {
-                    d = new Debt();
-                    playerToDebt.put(player, d);
-                }
-                d.add(costPerPlayer);
-            }
+            costs.setNumPlayers(matchNum, players.size());
+            players.stream().forEach(player -> costs.addDebt(player, matchNum));
+            i++;
         }
-
-        playerToDebt.forEach((name, debt) -> System.out.format("| %-15s | %2.2f |\n", name, debt.getTotal()));
-    }
-
-    private static class Debt {
-        private double d = 0.0;
-
-        public void add(double amount) {
-            d+=amount;
-        }
-
-        public double getTotal() {
-            return d;
-        }
+        return costs.getPlayerToDebt();
     }
 
     private static class MatchComparator implements Comparator<Match> {

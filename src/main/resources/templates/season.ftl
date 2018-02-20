@@ -1,6 +1,7 @@
 <#import "lib/utils.ftl" as u>
 <#import "/spring.ftl" as spring />
 <@u.page>
+
         <div>
             <div>
             <center>
@@ -53,5 +54,26 @@
                     </table>
                 </div>
             </center>
+            <#if (season >= 30)>
+                <br/>
+                <br/>
+                <div>
+                    <center>
+                        <b>Costs</b>
+                        <table style="border: 1px solid black;" width=40%>
+                            <tr>
+                                <th>Player</th>
+                                <th>Cost</th>
+                            </tr>
+                            <#list costs as player, debt>
+                                <tr>
+                                    <td width="200" style="text-align:center">${player}</td>
+                                    <td width="200" style="text-align:center">${debt.total}</td>
+                                </tr>
+                            </#list>
+                        <table>
+                    </center>
+                </div>
+            </#if>
         </div>
 </@u.page>
