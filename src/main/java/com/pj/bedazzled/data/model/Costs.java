@@ -1,15 +1,15 @@
 package com.pj.bedazzled.data.model;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Costs {
     private final BigDecimal totalSeasonCost;
     private final int numGamesPerSeason;
     private final BigDecimal costPerGame;
 
-    private final Map<String, Debt> playerToDebt = new HashMap<>();
+    private final Map<String, Debt> playerToDebt = new TreeMap<>();
     private final MatchCosts[] matchCosts;
 
     public Costs(long costPerSeason, int numGamesPerSeason) {
