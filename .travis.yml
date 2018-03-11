@@ -1,5 +1,4 @@
 language: java
-script: mvn install -P remote
 deploy:
   provider: elasticbeanstalk
   skip_cleanup: true

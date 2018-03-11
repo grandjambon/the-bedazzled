@@ -83,8 +83,20 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <artifact-packaging>jar</artifact-packaging>
+                <artifact-packaging>war</artifact-packaging>
             </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-maven-plugin</artifactId>
+                        <version>1.4.3.RELEASE</version>
+                        <configuration>
+                            <finalName>${project.artifactId}</finalName>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
         <profile>
             <id>remote</id>
