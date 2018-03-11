@@ -1,6 +1,6 @@
 language: java
+script: mvn install -P remote
 deploy:
-  script: mvn install -P remote
   provider: elasticbeanstalk
   skip_cleanup: true
   access_key_id: $AWS_ACCESS_KEY_ID
