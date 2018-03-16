@@ -7,7 +7,7 @@ OUTFIELD:Ben
 OUTFIELD:Goldie
 OUTFIELD:Chris
 
-GOAL:Baz
+GOAL:Ben
 GOAL:Chris
 CONCEDED
 GOAL:Paddy
@@ -19,6 +19,6 @@ HALF
 GOAL:Paddy
 GOAL:Paddy
 GOAL:Baz
-GOAL:Baz
+GOAL:Ben
 GOAL:Paddy
 GOAL:Chris
