@@ -14,5 +14,5 @@ GOAL:Paddy
 HALF
 CONCEDED
 GOAL:Baz
-GOAL:Paddy
+GOAL:OG
 GOAL:Paddy
