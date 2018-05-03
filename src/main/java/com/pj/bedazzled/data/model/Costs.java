@@ -62,6 +62,10 @@ public class Costs {
         public double getTotal() {
             return d.doubleValue();
         }
+
+        public BigDecimal getTotalAsBigDecimal() {
+            return d;
+        }
     }
 
     public static class MatchCosts {

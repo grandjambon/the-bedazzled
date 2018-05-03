@@ -1,0 +1,9 @@
+== Debts as at "start of season 31"
+Baz|75.04
+Ben|59.22
+Chris|-38.96
+Goldie|35.03
+Luke|51.54
+Paddy|60.74
+Phil|37.29
+Rob|65.54

@@ -2,6 +2,7 @@ package com.pj.bedazzled.data.util;
 
 import com.pj.bedazzled.data.model.Match;
 import com.pj.bedazzled.data.model.MatchEvent;
+import com.pj.bedazzled.data.model.TotalDebt;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
@@ -113,6 +114,34 @@ public class FileUtils {
             }
         }
         return builder.build();
+    }
+
+    public static Map<String, TotalDebt> getDebts() throws IOException {
+        Map<String, TotalDebt> playerToAllTimeDebt = new HashMap<>();
+        InputStream stream = FileUtils.class.getResourceAsStream("/baseline-debt.txt");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
+        String s;
+        while ((s = reader.readLine()) != null) {
+            if (s.startsWith("=")) {
+                continue;
+            }
+            String[] parts = s.split("\\|");
+            playerToAllTimeDebt.computeIfAbsent(parts[0], k -> new TotalDebt(parts[1]));
+        }
+
+        InputStream paymentsStream = FileUtils.class.getResourceAsStream("/payments.txt");
+        BufferedReader paymentsReader = new BufferedReader(new InputStreamReader(paymentsStream));
+        String payment;
+        while ((payment = paymentsReader.readLine()) != null) {
+            if (payment.startsWith("=")) {
+                continue;
+            }
+            String[] parts = payment.split("\\|");
+            TotalDebt totalDebt = playerToAllTimeDebt.computeIfAbsent(parts[1], k -> new TotalDebt("0"));
+
+            totalDebt.paymentReceived(parts[2]);
+        }
+        return playerToAllTimeDebt;
     }
 
     /**
