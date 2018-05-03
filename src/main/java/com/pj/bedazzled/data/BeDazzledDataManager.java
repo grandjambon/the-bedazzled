@@ -2,6 +2,7 @@ package com.pj.bedazzled.data;
 
 import com.pj.bedazzled.data.filters.TrivialMatchFilter;
 import com.pj.bedazzled.data.model.*;
+import com.pj.bedazzled.data.util.FileUtils;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
@@ -380,6 +381,22 @@ public class BeDazzledDataManager {
             i++;
         }
         return costs.getPlayerToDebt();
+    }
+
+    public Map<String, TotalDebt> getAccounts() throws IOException {
+        Map<String, TotalDebt> debts = FileUtils.getDebts();
+        addSeasonDebts(31, debts);
+//        addSeasonDebts(32, debts);
+        return debts;
+    }
+
+    private void addSeasonDebts(int season, Map<String, TotalDebt> debts) {
+        Map<String, Costs.Debt> costs = getCosts(season);
+        costs.forEach((s, debt) -> {
+            TotalDebt totalDebt = debts.computeIfAbsent(s, k -> new TotalDebt("0"));
+            totalDebt.addDebt(debt.getTotalAsBigDecimal());
+            debts.put(s, totalDebt);
+        });
     }
 
     private static class MatchComparator implements Comparator<Match> {

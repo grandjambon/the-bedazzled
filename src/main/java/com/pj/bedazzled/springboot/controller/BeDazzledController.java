@@ -256,4 +256,12 @@ public class BeDazzledController {
         return "streaks";
     }
 
+    @RequestMapping(value="/accounts")
+    String accounts(ModelMap model) throws IOException {
+        Map<String, TotalDebt> accounts = dataManager.getAccounts();
+        model.addAttribute("accounts", accounts);
+        model.addAttribute("upToTheEndOfSeason", 31);
+        return "accounts";
+    }
+
 }
