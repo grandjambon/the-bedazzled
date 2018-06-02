@@ -386,7 +386,7 @@ public class BeDazzledDataManager {
     public Map<String, TotalDebt> getAccounts() throws IOException {
         Map<String, TotalDebt> debts = FileUtils.getDebts();
         addSeasonDebts(31, debts);
-//        addSeasonDebts(32, debts);
+        addSeasonDebts(32, debts);
         return debts;
     }
 
