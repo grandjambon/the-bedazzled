@@ -1,4 +1,4 @@
-OPPONENT:Blighty
+OPPONENT:Blighty Coffee
 
 GOALKEEPER:Rob
 OUTFIELD:Paddy
