@@ -43,7 +43,7 @@ public class BeDazzledDataManagerTest {
     @Test
     public void testGetAccounts() throws IOException {
         Map<String, TotalDebt> debts = dataManager.getAccounts();
-        debts.forEach((player, debt) -> System.out.format("%-12s : %10s\n", player, debt.getDebt()));
+        debts.forEach((player, debt) -> System.out.format("%-12s : %10s\n", player, debt.getDebtAsEndOfLastSeason()));
 
         assertNotNull(debts);
     }

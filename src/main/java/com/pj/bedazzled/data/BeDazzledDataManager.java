@@ -6,7 +6,6 @@ import com.pj.bedazzled.data.util.FileUtils;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -19,6 +18,8 @@ import static com.pj.bedazzled.data.util.FileUtils.getSeasonNames;
  */
 @SuppressWarnings("unused")
 public class BeDazzledDataManager {
+
+    public static final int CURRENT_SEASON = 33;
 
     private Map<String, Map<String, Match>> allTimeHistoryMap = new TreeMap<>();
 
@@ -385,9 +386,16 @@ public class BeDazzledDataManager {
 
     public Map<String, TotalDebt> getAccounts() throws IOException {
         Map<String, TotalDebt> debts = FileUtils.getDebts();
-        addSeasonDebts(31, debts);
-        addSeasonDebts(32, debts);
-        return debts;
+        Collection<String> currentSquad = FileUtils.currentSquadForAccounts();
+        // all seasons after 31 should be "addSeasonDebts" - until last full season etc
+        for (int i=31; i<CURRENT_SEASON-1; i++) {
+            addSeasonDebts(i, debts);
+        }
+        addLastFullSeasonDebts(CURRENT_SEASON-1, debts);
+        addCurrentSeasonDebts(CURRENT_SEASON, debts);
+
+        return new TreeMap<>(debts.entrySet().stream().filter(e -> currentSquad.contains(e.getKey())).
+                collect(Collectors.toMap(e -> e.getKey(), e->e.getValue())));
     }
 
     private void addSeasonDebts(int season, Map<String, TotalDebt> debts) {
@@ -395,6 +403,24 @@ public class BeDazzledDataManager {
         costs.forEach((s, debt) -> {
             TotalDebt totalDebt = debts.computeIfAbsent(s, k -> new TotalDebt("0"));
             totalDebt.addDebt(debt.getTotalAsBigDecimal());
+            debts.put(s, totalDebt);
+        });
+    }
+
+    private void addLastFullSeasonDebts(int season, Map<String, TotalDebt> debts) {
+        Map<String, Costs.Debt> costs = getCosts(season);
+        costs.forEach((s, debt) -> {
+            TotalDebt totalDebt = debts.computeIfAbsent(s, k -> new TotalDebt("0"));
+            totalDebt.addLastFullSeasonCost(debt.getTotalAsBigDecimal());
+            debts.put(s, totalDebt);
+        });
+    }
+
+    private void addCurrentSeasonDebts(int season, Map<String, TotalDebt> debts) {
+        Map<String, Costs.Debt> costs = getCosts(season);
+        costs.forEach((s, debt) -> {
+            TotalDebt totalDebt = debts.computeIfAbsent(s, k -> new TotalDebt("0"));
+            totalDebt.addCurrentSeasonCost(debt.getTotalAsBigDecimal());
             debts.put(s, totalDebt);
         });
     }

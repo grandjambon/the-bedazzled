@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static com.pj.bedazzled.data.BeDazzledDataManager.CURRENT_SEASON;
 import static com.pj.bedazzled.data.model.Grade.A_GRADE;
 import static com.pj.bedazzled.data.model.Grade.B_GRADE;
 
@@ -260,7 +261,8 @@ public class BeDazzledController {
     String accounts(ModelMap model) throws IOException {
         Map<String, TotalDebt> accounts = dataManager.getAccounts();
         model.addAttribute("accounts", accounts);
-        model.addAttribute("upToTheEndOfSeason", 31);
+        model.addAttribute("lastFullSeason", CURRENT_SEASON-1);
+        model.addAttribute("currentSeason", CURRENT_SEASON);
         return "accounts";
     }
 
