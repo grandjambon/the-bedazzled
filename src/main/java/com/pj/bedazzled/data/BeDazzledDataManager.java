@@ -385,9 +385,12 @@ public class BeDazzledDataManager {
 
     public Map<String, TotalDebt> getAccounts() throws IOException {
         Map<String, TotalDebt> debts = FileUtils.getDebts();
+        Collection<String> currentSquad = FileUtils.currentSquadForAccounts();
         addSeasonDebts(31, debts);
         addSeasonDebts(32, debts);
-        return debts;
+
+        return debts.entrySet().stream().filter(e -> currentSquad.contains(e.getKey())).
+                collect(Collectors.toMap(e -> e.getKey(), e->e.getValue()));
     }
 
     private void addSeasonDebts(int season, Map<String, TotalDebt> debts) {

@@ -16,6 +16,7 @@
                         <li><a href="<@spring.url '/appearances/grade/all/minapps/0'/>">All Player Stats</a></li>
                         <li><a href="<@spring.url '/opponents'/>">Opponents</a></li>
                         <li><a href="<@spring.url '/records'/>">Records</a></li>
+                        <li><a href="<@spring.url '/accounts'/>">Accounts</a></li>
                     </ul>
                 </center>
                 </nav>

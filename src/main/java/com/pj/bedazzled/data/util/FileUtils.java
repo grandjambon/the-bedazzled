@@ -116,6 +116,18 @@ public class FileUtils {
         return builder.build();
     }
 
+    public static Collection<String> currentSquadForAccounts() throws IOException {
+        Collection<String> currentSquad = new ArrayList<>();
+
+        InputStream stream = FileUtils.class.getResourceAsStream("/accounts-current-squad.txt");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
+        String s;
+        while ((s = reader.readLine()) != null) {
+            currentSquad.add(s);
+        }
+        return currentSquad;
+    }
+
     public static Map<String, TotalDebt> getDebts() throws IOException {
         Map<String, TotalDebt> playerToAllTimeDebt = new HashMap<>();
         InputStream stream = FileUtils.class.getResourceAsStream("/baseline-debt.txt");
