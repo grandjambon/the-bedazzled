@@ -367,7 +367,7 @@ public class BeDazzledDataManager {
     public Map<String, Costs.Debt> getCosts(int season) {
         Collection<Match> matches = getMatches(match -> match.getSeasonNumber() == season);
 
-        Costs costs = new Costs(475, 10);
+        Costs costs = new Costs(475, matches.size());
 
         int i = 1;
         for (Match m : matches) {
