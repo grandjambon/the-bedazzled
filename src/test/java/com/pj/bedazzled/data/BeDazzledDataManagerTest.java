@@ -1,6 +1,7 @@
 package com.pj.bedazzled.data;
 
 import com.pj.bedazzled.data.model.Costs;
+import com.pj.bedazzled.data.model.Match;
 import com.pj.bedazzled.data.model.Player;
 import com.pj.bedazzled.data.model.TotalDebt;
 import com.pj.bedazzled.springboot.controller.BeDazzledConfiguration;
@@ -14,6 +15,7 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.Map;
 
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 @SuppressWarnings("unused")
@@ -46,6 +48,13 @@ public class BeDazzledDataManagerTest {
         debts.forEach((player, debt) -> System.out.format("%-12s : %10s\n", player, debt.getDebtAsEndOfLastSeason()));
 
         assertNotNull(debts);
+    }
+
+    @Test
+    public void testGetMatches() throws IOException {
+        Map<String, Match> matches = dataManager.getMatchesForSeason("season34");
+        assertThat(matches.size(), is(10));
+        assertThat(matches.get("match-09-report.txt").isForfeit(), is(true));
     }
 
 }

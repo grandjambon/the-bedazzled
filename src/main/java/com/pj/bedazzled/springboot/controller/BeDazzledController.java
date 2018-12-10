@@ -138,7 +138,7 @@ public class BeDazzledController {
 
         Match match = matchesForSeason.get(matchName);
 
-        UiMatch uiMatch = new UiMatch(match.getOpponent(), matchNum, seasonNum);
+        UiMatch uiMatch = new UiMatch(match.getOpponent(), matchNum, seasonNum, match.isForfeit());
 
         int gFor = 0;
         int gAgainst = 0;

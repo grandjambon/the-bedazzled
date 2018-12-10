@@ -2,14 +2,12 @@ package com.pj.bedazzled.data.model;
 
 import java.util.List;
 
-import static com.pj.bedazzled.data.model.Match.Outcome.DRAW;
-import static com.pj.bedazzled.data.model.Match.Outcome.LOSS;
-import static com.pj.bedazzled.data.model.Match.Outcome.WIN;
+import static com.pj.bedazzled.data.model.Match.Outcome.*;
 
 public class Match {
 
     public enum Outcome {
-        WIN("DDEDD3"), LOSS("F5C1C1"), DRAW("F5F7CD");
+        WIN("DDEDD3"), LOSS("F5C1C1"), DRAW("F5F7CD"), FORFEIT("F442D7");
 
         final String colour;
 
@@ -31,8 +29,9 @@ public class Match {
     private final int goalsFor;
     private final int goalsAgainst;
     private final Grade grade;
+    private final boolean isForfeit;
 
-    public Match(int seasonNumber, int number, String opponent, String goalie, List<String> players, List<MatchEvent> events) {
+    public Match(int seasonNumber, int number, String opponent, String goalie, List<String> players, List<MatchEvent> events, boolean isForfeit) {
         this.seasonNumber = seasonNumber;
         this.number = number;
         this.opponent = opponent;
@@ -56,6 +55,7 @@ public class Match {
         this.goalsFor = gf;
         this.goalsAgainst = ga;
         this.grade = Grade.getGrade(seasonNumber);
+        this.isForfeit = isForfeit;
     }
 
     public String getOpponent() {
@@ -83,6 +83,9 @@ public class Match {
     }
 
     public Outcome getOutcome() {
+        if (isForfeit) {
+            return FORFEIT;
+        }
         if (goalsAgainst > goalsFor) {
             return LOSS;
         } else if (goalsAgainst < goalsFor) {
@@ -101,5 +104,9 @@ public class Match {
 
     public Grade getGrade() {
         return grade;
+    }
+
+    public boolean isForfeit() {
+        return isForfeit;
     }
 }
