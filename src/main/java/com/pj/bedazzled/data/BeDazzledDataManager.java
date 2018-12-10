@@ -19,7 +19,7 @@ import static com.pj.bedazzled.data.util.FileUtils.getSeasonNames;
 @SuppressWarnings("unused")
 public class BeDazzledDataManager {
 
-    public static final int CURRENT_SEASON = 34;
+    public static final int CURRENT_SEASON = 35;
 
     private Map<String, Map<String, Match>> allTimeHistoryMap = new TreeMap<>();
 
