@@ -8,6 +8,7 @@ public class UiMatch {
     private final String opponent;
     private final int number;
     private final int season;
+    private final boolean isForfeit;
 
     private String header;
     private String halfTimeScore;
@@ -18,11 +19,12 @@ public class UiMatch {
 
     private List<UiMatchEvent> thisHalf = firstHalf;
 
-    public UiMatch(String opponent, int number, int season) {
+    public UiMatch(String opponent, int number, int season, boolean isForfeit) {
         header = "BeDazzled v " + opponent;
         this.opponent = opponent;
         this.number = number;
         this.season = season;
+        this.isForfeit = isForfeit;
     }
 
     /**
@@ -66,6 +68,10 @@ public class UiMatch {
 
     public int getSeason() {
         return season;
+    }
+
+    public boolean getIsForfeit() {
+        return isForfeit;
     }
 }
 

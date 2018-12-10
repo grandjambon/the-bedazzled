@@ -2,23 +2,20 @@ package com.pj.bedazzled.data.util;
 
 import com.pj.bedazzled.data.model.Match;
 import com.pj.bedazzled.data.model.MatchEvent;
+
 import static com.pj.bedazzled.data.model.MatchEvent.*;
 
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by phil on 05/02/17.
- */
 public class MatchBuilder {
-//    private Opponent opponent;
 
     private final int seasonNumber;
     private final int matchNumber;    // what match in the season are we?
     private String opponent;
     private String goalie;
-    private List<String> players = new LinkedList<String>();
-    private List<MatchEvent> matchEvents = new LinkedList<MatchEvent>();
+    private List<String> players = new LinkedList<>();
+    private List<MatchEvent> matchEvents = new LinkedList<>();
 
     public MatchBuilder(int matchNumber, int seasonNumber) {
         this.matchNumber = matchNumber;
@@ -26,7 +23,6 @@ public class MatchBuilder {
     }
 
     public MatchBuilder setOpponent(String opponentName) {
-
         this.opponent = opponentName;
         return this;
     }
@@ -57,7 +53,12 @@ public class MatchBuilder {
     }
 
     public Match build() {
-        return new Match(seasonNumber, matchNumber, opponent, goalie, players, matchEvents);
+        // 6 x forfeit
+        if (matchEvents.stream().filter(matchEvent -> matchEvent.getType() == MatchEventType.GOAL && matchEvent.getScorer().equals("FORFEIT")).count() == 6) {
+            return new Match(seasonNumber, matchNumber, opponent, goalie, players, matchEvents, true);
+        }
+
+        return new Match(seasonNumber, matchNumber, opponent, goalie, players, matchEvents, false);
     }
 
 }

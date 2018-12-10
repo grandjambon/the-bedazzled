@@ -78,7 +78,7 @@ public class Costs {
             this.matchNumber = matchNumber;
             this.totalCost = totalCost;
             this.numPlayers = numPlayers;
-            this.costPerPlayer = totalCost.divide(new BigDecimal(numPlayers), 2, BigDecimal.ROUND_FLOOR);
+            this.costPerPlayer = (numPlayers == 0) ? BigDecimal.ZERO :totalCost.divide(new BigDecimal(numPlayers), 2, BigDecimal.ROUND_FLOOR);
         }
 
         public BigDecimal getTotalCost() {

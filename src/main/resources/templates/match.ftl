@@ -43,16 +43,18 @@
             </tr>
         </table>
         </br>
-        </br>
-        <table style="display:inline-block;vertical-align:top;">
-            <tr style="background-color:#e6ffe6">
-                <td width="50" style="text-align:center"><a href="<@spring.url '/player/${goalie}'/>">${goalie}</a></td>
-            </tr>
-            <#list outfielders as outfielder>
-                <tr style="background-color:#e6f7ff">
-                    <td width="50" style="text-align:center"><a href="<@spring.url '/player/${outfielder}'/>">${outfielder}</a></td>
+        <#if !match.isForfeit>
+            </br>
+            <table style="display:inline-block;vertical-align:top;">
+                <tr style="background-color:#e6ffe6">
+                    <td width="50" style="text-align:center"><a href="<@spring.url '/player/${goalie}'/>">${goalie}</a></td>
                 </tr>
-            </#list>
-        </table>
+                <#list outfielders as outfielder>
+                    <tr style="background-color:#e6f7ff">
+                        <td width="50" style="text-align:center"><a href="<@spring.url '/player/${outfielder}'/>">${outfielder}</a></td>
+                    </tr>
+                </#list>
+            </table>
+        </#if>
     </center>
 </@u.page>
