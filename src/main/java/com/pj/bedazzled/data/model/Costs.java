@@ -24,6 +24,10 @@ public class Costs {
         playerToDebt.computeIfAbsent(player, k -> new Debt()).add(matchCost.getCostPerPlayer());
     }
 
+    public void addForfeitDebt(long numForfeits) {
+        playerToDebt.forEach((s, debt) -> debt.handleForfeit(numForfeits));
+    }
+
     public void setNumPlayers(int matchNumber, int numPlayers) {
         matchCosts[matchNumber-1] = new MatchCosts(matchNumber, costPerGame, numPlayers);
     }
@@ -65,6 +69,10 @@ public class Costs {
 
         public BigDecimal getTotalAsBigDecimal() {
             return d;
+        }
+
+        private void handleForfeit(long numForfeits) {
+            d = d.multiply(BigDecimal.valueOf(10)).divide(BigDecimal.valueOf(10-numForfeits), BigDecimal.ROUND_UP);
         }
     }
 

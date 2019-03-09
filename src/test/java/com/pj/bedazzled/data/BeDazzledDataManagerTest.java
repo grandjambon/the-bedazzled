@@ -35,7 +35,7 @@ public class BeDazzledDataManagerTest {
 
     @Test
     public void testGetCosts() throws IOException {
-        Map<String, Costs.Debt> costs = dataManager.getCosts(29);
+        Map<String, Costs.Debt> costs = dataManager.getCosts(34);
         costs.forEach((player, debt) -> System.out.format("%s = %s\n", player, debt.getTotal()));
 
         // verify that they add up to a diff of less than a pound out
