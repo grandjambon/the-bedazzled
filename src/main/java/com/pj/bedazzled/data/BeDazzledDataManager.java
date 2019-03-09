@@ -189,6 +189,7 @@ public class BeDazzledDataManager {
                 Match match = entry.getValue();
 
                 switch (match.getOutcome()) {
+                    case FORFEIT:
                     case WIN:
                         wins++;
                         break;
@@ -381,6 +382,10 @@ public class BeDazzledDataManager {
             players.stream().forEach(player -> costs.addDebt(player, matchNum));
             i++;
         }
+
+        // handle forfeits
+        costs.addForfeitDebt(matches.stream().filter(Match::isForfeit).count());
+
         return costs.getPlayerToDebt();
     }
 
