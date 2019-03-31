@@ -145,7 +145,7 @@ public class FileUtils {
         BufferedReader paymentsReader = new BufferedReader(new InputStreamReader(paymentsStream));
         String payment;
         while ((payment = paymentsReader.readLine()) != null) {
-            if (payment.startsWith("=")) {
+            if (payment.startsWith("=") || payment.length() == 0) {
                 continue;
             }
             String[] parts = payment.split("\\|");
