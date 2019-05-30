@@ -2,7 +2,6 @@ Baz
 Goldie
 Paddy
 Ben
-RossBaz
 Ross
 Luke
 Phil
