@@ -16,6 +16,7 @@ public class Honours {
             case 23:
             case 25:
             case 34:
+            case 38:
                 return "RU";
             case 14:
                 return "Promoted (2nd)";
