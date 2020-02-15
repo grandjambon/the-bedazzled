@@ -10,6 +10,7 @@ public class Honours {
             case 28:
             case 29:
             case 30:
+            case 39:
                 return "Champions";
             case 18:
             case 21:
