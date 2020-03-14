@@ -10,6 +10,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 import static com.pj.bedazzled.data.model.MatchEvent.MatchEventType.GOAL;
+import static com.pj.bedazzled.data.model.Season.getFullSeasonSize;
+import static com.pj.bedazzled.data.model.Season.getSeasonCost;
 import static com.pj.bedazzled.data.util.FileUtils.getSeasonForDirectory;
 import static com.pj.bedazzled.data.util.FileUtils.getSeasonNames;
 
@@ -368,7 +370,7 @@ public class BeDazzledDataManager {
     public Map<String, Costs.Debt> getCosts(int season) {
         Collection<Match> matches = getMatches(match -> match.getSeasonNumber() == season);
 
-        Costs costs = new Costs(475, Math.max(matches.size(), 10));
+        Costs costs = new Costs(getSeasonCost(season), Math.max(matches.size(), getFullSeasonSize(season)));
 
         int i = 1;
         for (Match m : matches) {

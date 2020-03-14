@@ -24,7 +24,7 @@ import static com.pj.bedazzled.data.model.Grade.B_GRADE;
 
 @SuppressWarnings("unused")
 @Controller
-public class BeDazzledController {
+class BeDazzledController {
 
     @Autowired
     private BeDazzledDataManager dataManager;
@@ -40,23 +40,26 @@ public class BeDazzledController {
      *
      * @param grade a, b, t, all
      * @param num 0 for everything, obv
-     * @param model
-     * @return
-     * @throws IOException
+     * @throws IOException if we get an error loading a file
      */
     @RequestMapping("/appearances/grade/{grade}/minapps/{num}")
     String appearances(@PathVariable String grade, @PathVariable @NumberFormat int num, ModelMap model) throws IOException {
 
         MatchFilter filter;
 
-        if (grade.equals("a")) {
-            filter = new GradeMatchFilter(A_GRADE);
-        } else if (grade.equals("b")) {
-            filter = new GradeMatchFilter(B_GRADE);
-        } else if (grade.equals("t")) {
-            filter = new GradeMatchFilter(Grade.TRANSITION);
-        } else {
-            filter = new TrivialMatchFilter();
+        switch (grade) {
+            case "a":
+                filter = new GradeMatchFilter(A_GRADE);
+                break;
+            case "b":
+                filter = new GradeMatchFilter(B_GRADE);
+                break;
+            case "t":
+                filter = new GradeMatchFilter(Grade.TRANSITION);
+                break;
+            default:
+                filter = new TrivialMatchFilter();
+                break;
         }
 
 
@@ -124,10 +127,6 @@ public class BeDazzledController {
 
     /**
      * All a bit messy - suspect all this logic should really be elsewhere
-     * @param seasonNum
-     * @param matchNum
-     * @param model
-     * @return
      */
     @RequestMapping(value="/season/{seasonNum}/match/{matchNum}")
     String match(@PathVariable @NumberFormat int seasonNum, @PathVariable @NumberFormat int matchNum, ModelMap model) {
