@@ -71,8 +71,8 @@ public class Season {
     /**
      * Seasons 1-8 were of size 14
      * Season 9 was size 11
-     * Seasons 10-39 were of size 10
-     * Season 40 onwards are of size 12
+     * Seasons 10-40 were of size 10
+     * Season 41 onwards are of size 14
      * @param seasonNumber
      */
     public static int getFullSeasonSize(int seasonNumber) {
@@ -80,10 +80,10 @@ public class Season {
             return 11;
         } else if (seasonNumber >= 1 && seasonNumber <= 8) {
             return 14;
-        } else if (seasonNumber >= 10 && seasonNumber <=39) {
+        } else if (seasonNumber >= 10 && seasonNumber <=40) {
             return 10;
-        } else { // 40 and up, currently
-            return 12;
+        } else { // 41 and up, currently
+            return 14;
         }
 
     }
@@ -91,8 +91,10 @@ public class Season {
     public static int getSeasonCost(int seasonNumber) {
         if (seasonNumber >=31 && seasonNumber <=39) {
             return 475;
-        } else { // 40 and up, currently
-            return 600;
+        } else if (seasonNumber == 40) {
+            return 500;
+        } else { // 41 and up, currently
+            return 700;
         }
 
     }
