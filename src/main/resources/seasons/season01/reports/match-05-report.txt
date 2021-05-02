@@ -1,5 +1,7 @@
 OPPONENT:Tropa de Elite
 
+DATE:18-02-2010
+
 GOALKEEPER:Rob
 OUTFIELD:Phil
 OUTFIELD:Nathan

@@ -1,5 +1,7 @@
 OPPONENT:Shillelagh Celtic
 
+DATE:28-01-2010
+
 GOALKEEPER:GBell
 OUTFIELD:Phil
 OUTFIELD:Donal

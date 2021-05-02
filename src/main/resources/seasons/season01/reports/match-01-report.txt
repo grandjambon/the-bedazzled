@@ -1,5 +1,7 @@
 OPPONENT:Dumb & Dumbarton
 
+DATE:21-01-2010
+
 GOALKEEPER:Damian
 OUTFIELD:Nathan
 OUTFIELD:Pete

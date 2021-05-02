@@ -1,5 +1,7 @@
 OPPONENT:Shaktar Senseless
 
+DATE:04-03-2010
+
 GOALKEEPER:Damian
 OUTFIELD:Phil
 OUTFIELD:Nathan
