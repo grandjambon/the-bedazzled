@@ -6,7 +6,7 @@ OUTFIELD:Ross
 OUTFIELD:Sammi
 OUTFIELD:AlexBaz
 
-GOAL:Alex
+GOAL:AlexBaz
 CONCEDED
 GOAL:Benny
 GOAL:Benny
