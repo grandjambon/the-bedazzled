@@ -1,6 +1,7 @@
 package com.pj.bedazzled.data.model;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -15,7 +16,7 @@ public class Costs {
     public Costs(long costPerSeason, int numGamesPerSeason) {
         this.totalSeasonCost = new BigDecimal(costPerSeason);
         this.numGamesPerSeason = numGamesPerSeason;
-        this.costPerGame = totalSeasonCost.divide(new BigDecimal(numGamesPerSeason), 2, BigDecimal.ROUND_FLOOR);
+        this.costPerGame = totalSeasonCost.divide(new BigDecimal(numGamesPerSeason), 2, RoundingMode.FLOOR);
         this.matchCosts = new MatchCosts[numGamesPerSeason];
     }
 
@@ -72,7 +73,7 @@ public class Costs {
         }
 
         private void handleForfeit(long numForfeits) {
-            d = d.multiply(BigDecimal.valueOf(10)).divide(BigDecimal.valueOf(10-numForfeits), BigDecimal.ROUND_UP);
+            d = d.multiply(BigDecimal.valueOf(10)).divide(BigDecimal.valueOf(10-numForfeits), RoundingMode.UP);
         }
     }
 
@@ -86,7 +87,7 @@ public class Costs {
             this.matchNumber = matchNumber;
             this.totalCost = totalCost;
             this.numPlayers = numPlayers;
-            this.costPerPlayer = (numPlayers == 0) ? BigDecimal.ZERO :totalCost.divide(new BigDecimal(numPlayers), 2, BigDecimal.ROUND_FLOOR);
+            this.costPerPlayer = (numPlayers == 0) ? BigDecimal.ZERO :totalCost.divide(new BigDecimal(numPlayers), 2, RoundingMode.FLOOR);
         }
 
         public BigDecimal getTotalCost() {

@@ -1,31 +1,26 @@
 package com.pj.bedazzled.data.util;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import java.io.IOException;
-import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.assertj.core.api.Assertions.assertThat;
 
-public class SpringFileResolverTest {
+class SpringFileResolverTest {
 
     @Test
-    public void test() throws IOException {
+    void test() throws IOException {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        Resource[] resources = resolver.getResources("/seasons/season01/reports/*");
-        assertNotNull(resources);
-        assertEquals(14, resources.length);
+        Resource[] resources = resolver.getResources("classpath:seasons/season01/reports/*");
+        assertThat(resources).hasSize(14);
     }
 
     @Test
-    public void testGetSeasons() throws IOException {
+    void testGetSeasons() throws IOException {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        Resource[] resources = resolver.getResources("/seasons/*/");
-        assertNotNull(resources);
-
+        Resource[] resources = resolver.getResources("classpath:seasons/*/");
+        assertThat(resources).isNotNull();
     }
-
 }

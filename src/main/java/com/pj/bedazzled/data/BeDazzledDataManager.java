@@ -1,10 +1,22 @@
 package com.pj.bedazzled.data;
 
 import com.pj.bedazzled.data.filters.TrivialMatchFilter;
-import com.pj.bedazzled.data.model.*;
+import com.pj.bedazzled.data.model.Costs;
+import com.pj.bedazzled.data.model.CountingStat;
+import com.pj.bedazzled.data.model.CountingStatComparator;
+import com.pj.bedazzled.data.model.Grade;
+import com.pj.bedazzled.data.model.Honours;
+import com.pj.bedazzled.data.model.Match;
+import com.pj.bedazzled.data.model.MatchEvent;
+import com.pj.bedazzled.data.model.OpponentRecord;
+import com.pj.bedazzled.data.model.Player;
+import com.pj.bedazzled.data.model.PlayerMatch;
+import com.pj.bedazzled.data.model.Record;
+import com.pj.bedazzled.data.model.Season;
+import com.pj.bedazzled.data.model.TotalDebt;
 import com.pj.bedazzled.data.util.FileUtils;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -175,7 +187,7 @@ public class BeDazzledDataManager {
         for (Map.Entry<String, Map<String, Match>> season : allTimeHistoryMap.entrySet()) {
 
             String seasonName = season.getKey();
-            int seasonNumber = Integer.valueOf(seasonName.replace("season", ""));
+            int seasonNumber = Integer.parseInt(seasonName.replace("season", ""));
 
             int wins = 0;
             int losses = 0;
