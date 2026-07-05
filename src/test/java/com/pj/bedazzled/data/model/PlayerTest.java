@@ -1,35 +1,20 @@
 package com.pj.bedazzled.data.model;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
-/**
-* Test for PPG
-*/
-public class PlayerTest {
+class PlayerTest {
 
     @Test
-    public void testPPG() {
+    void testPPG() {
         Player player = new Player("test");
 
-        player.incrementWins();
-        player.incrementWins();
-        player.incrementWins();
-        player.incrementWins();
-        player.incrementWins();
-        player.incrementWins();
-        player.incrementWins();
+        for (int i = 0; i < 7; i++) player.incrementWins();
+        for (int i = 0; i < 2; i++) player.incrementDraws();
+        for (int i = 0; i < 4; i++) player.incrementLosses();
 
-        player.incrementDraws();
-        player.incrementDraws();
-
-        player.incrementLosses();
-        player.incrementLosses();
-        player.incrementLosses();
-        player.incrementLosses();
-
-        System.out.println(player.getPpg());
+        // 7 wins * 3 + 2 draws * 1 = 23 points / 13 games = 1.769
+        assertThat(player.getPpg()).isEqualTo("1.769");
     }
-
 }

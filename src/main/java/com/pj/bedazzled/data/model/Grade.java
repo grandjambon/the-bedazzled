@@ -35,7 +35,7 @@ public enum Grade {
      * @return the grade
      */
     public static Grade getGrade(String seasonName) {
-        int seasonNumber = Integer.valueOf(seasonName.replace("season", ""));
+        int seasonNumber = Integer.parseInt(seasonName.replace("season", ""));
         return getGrade(seasonNumber);
     }
 

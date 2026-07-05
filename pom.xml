@@ -4,28 +4,22 @@
  
     <groupId>com.pj.bedazzled</groupId>
     <artifactId>the-bedazzled</artifactId>
-    <version>1.0.48-SNAPSHOT</version>
-    <packaging>${artifact-packaging}</packaging>
- 
+    <version>2.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
     <name>${project.artifactId}</name>
  
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.3.RELEASE</version>
+        <version>3.4.4</version>
     </parent>
  
     <properties>
-        <java.version>1.8</java.version>
-        <startClass>com.pj.bedazzled.BeDazzledWebWarApp</startClass>
-        <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
-        <!-- Additionally, Please make sure that your JAVA_HOME is pointing to
-            1.8 when building on commandline -->
+        <java.version>21</java.version>
     </properties>
  
     <dependencies>
-        <!-- Add typical dependencies efor a web application -->
-        <!-- Adds Tomcat and Spring MVC, along others -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -34,26 +28,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
-        <!--dependency>
-            <groupId>com.pj.bedazzled</groupId>
-            <artifactId>bedazzled-data</artifactId>
-            <version>26.0-SNAPSHOT</version>
-        </dependency-->
 
-        <!-- JUnit -->
+        <!-- Test -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>4.3.5.RELEASE</version>
-        </dependency>
     </dependencies>
- 
  
     <build>
         <plugins>
@@ -61,67 +43,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <path>/${project.artifactId}</path>
-                    <update>true</update>
-                    <url>http://localhost:8080/manager/text</url>
-                    <username>tomcat</username>
-                    <password>tomcatuser</password>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
- 
-    <profiles>
-        <profile>
-            <id>local</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <artifact-packaging>war</artifact-packaging>
-            </properties>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-maven-plugin</artifactId>
-                        <version>1.4.3.RELEASE</version>
-                        <configuration>
-                            <finalName>${project.artifactId}</finalName>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>remote</id>
-            <properties>
-                <artifact-packaging>war</artifact-packaging>
-            </properties>
-            <dependencies>
-                <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-            </dependencies>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-maven-plugin</artifactId>
-                        <version>1.4.3.RELEASE</version>
-                        <configuration>
-                            <finalName>${project.artifactId}</finalName>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>

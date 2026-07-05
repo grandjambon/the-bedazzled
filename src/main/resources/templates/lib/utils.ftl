@@ -17,6 +17,7 @@
                         <li><a href="<@spring.url '/opponents'/>">Opponents</a></li>
                         <li><a href="<@spring.url '/records'/>">Records</a></li>
                         <li><a href="<@spring.url '/accounts'/>">Accounts</a></li>
+                        <li><a href="<@spring.url '/streaks'/>">Streaks</a></li>
                     </ul>
                 </center>
                 </nav>

@@ -94,7 +94,7 @@ public class FileUtils {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
 
-        int seasonNumber = Integer.valueOf(seasonName.replace("season", ""));
+        int seasonNumber = Integer.parseInt(seasonName.replace("season", ""));
 
         MatchBuilder builder = new MatchBuilder(matchNumber, seasonNumber);
 

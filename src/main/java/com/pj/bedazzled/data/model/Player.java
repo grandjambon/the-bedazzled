@@ -1,6 +1,7 @@
 package com.pj.bedazzled.data.model;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 /**
  * PoJo to hold onto Player data.
@@ -54,7 +55,7 @@ public class Player {
     public String getPpg() {
         BigDecimal points = new BigDecimal(3*wins + draws);
         BigDecimal games = new BigDecimal(wins+draws+losses);
-        BigDecimal ppg = points.divide(games, 3, BigDecimal.ROUND_DOWN);
+        BigDecimal ppg = points.divide(games, 3, RoundingMode.DOWN);
 
         return String.format("%.3f", ppg.doubleValue());
     }
