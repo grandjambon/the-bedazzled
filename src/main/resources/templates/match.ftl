@@ -43,7 +43,7 @@
             </tr>
         </table>
         </br>
-        <#if !match.isForfeit>
+        <#if !match.isForfeit && goalie??>
             </br>
             <table style="display:inline-block;vertical-align:top;">
                 <tr style="background-color:#e6ffe6">

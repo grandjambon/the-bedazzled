@@ -179,38 +179,42 @@ class BeDazzledController {
         // get goalie apps
         List<Player> goalies = new ArrayList<>(dataManager.getPlayers());
         goalies.sort(Comparator.comparingInt(Player::getGoalieApps).reversed());
-        model.addAttribute("goalieApps", goalies.subList(0,9));
+        model.addAttribute("goalieApps", topN(goalies, 9));
 
         // get appearances
         List<Player> players = new ArrayList<>(dataManager.getPlayers());
         players.sort(Comparator.comparingInt(Player::getApps).reversed());
-        model.addAttribute("apps", players.subList(0,9));
+        model.addAttribute("apps", topN(players, 9));
         // a grade
         List<Player> aGradePlayers = new ArrayList<>(dataManager.getPlayers(new GradeMatchFilter(A_GRADE)));
         aGradePlayers.sort(Comparator.comparingInt(Player::getApps).reversed());
-        model.addAttribute("aGradeApps", aGradePlayers.subList(0,9));
+        model.addAttribute("aGradeApps", topN(aGradePlayers, 9));
         // b grade
         List<Player> bGradePlayers = new ArrayList<>(dataManager.getPlayers(new GradeMatchFilter(B_GRADE)));
         bGradePlayers.sort(Comparator.comparingInt(Player::getApps).reversed());
-        model.addAttribute("bGradeApps", bGradePlayers.subList(0,9));
+        model.addAttribute("bGradeApps", topN(bGradePlayers, 9));
         // get top scorers
         List<Player> goals = new ArrayList<>(dataManager.getPlayers());
         goals.sort(Comparator.comparingInt(Player::getGoals).reversed());
-        model.addAttribute("goals", goals.subList(0,9));
+        model.addAttribute("goals", topN(goals, 9));
         // a grade
         List<Player> aGradePlayersForGoals = new ArrayList<>(dataManager.getPlayers(new GradeMatchFilter(A_GRADE)));
         aGradePlayersForGoals.sort(Comparator.comparingInt(Player::getGoals).reversed());
-        model.addAttribute("aGradeGoals", aGradePlayersForGoals.subList(0,9));
+        model.addAttribute("aGradeGoals", topN(aGradePlayersForGoals, 9));
         // b grade
         List<Player> bGradePlayersForGoals = new ArrayList<>(dataManager.getPlayers(new GradeMatchFilter(B_GRADE)));
         bGradePlayersForGoals.sort(Comparator.comparingInt(Player::getGoals).reversed());
-        model.addAttribute("bGradeGoals", bGradePlayersForGoals.subList(0,9));
+        model.addAttribute("bGradeGoals", topN(bGradePlayersForGoals, 9));
 
         // appearance streaks
 
         // goalscoring streaks
 
         return "records";
+    }
+
+    private <T> List<T> topN(List<T> list, int n) {
+        return list.subList(0, Math.min(n, list.size()));
     }
 
     @RequestMapping(value="/opponents")
@@ -251,12 +255,6 @@ class BeDazzledController {
         modelMap.put("playerMatches", playerMatches);
         return "player";
     }
-
-    @RequestMapping(value="/walkup")
-    String walkup(ModelMap model) throws IOException {
-        return "walkup";
-    }
-
 
     @RequestMapping(value="/streaks")
     String streaks(ModelMap model) throws IOException {
